@@ -39,7 +39,7 @@ options:
   substitutionOption: ALLOW_LOOSE
 substitutions:
   _PLATFORM: managed
-  _SERVICE_NAME: backend-acounts-api
+  _SERVICE_NAME: backend-accounts-api
   _TRIGGER_ID: 5769c5a8-3db3-4015-a4d1-0e1d21ba0561
   _DEPLOY_REGION: asia-northeast1
   _AR_HOSTNAME: asia-northeast1-docker.pkg.dev
