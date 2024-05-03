@@ -1,5 +1,4 @@
 import { serve } from '@hono/node-server'
-import exp from 'constants'
 import { Hono } from 'hono'
 
 const app = new Hono()
