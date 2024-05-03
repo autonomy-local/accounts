@@ -7,6 +7,9 @@ on: [pull_request]
 jobs:
   test:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
     strategy:
       matrix:
         node-version: [22.x]
@@ -18,4 +21,3 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm install
       - run: npm run test
-        working-directory: ./backend
