@@ -4,10 +4,10 @@ import { Hono } from 'hono'
 const app = new Hono()
 
 app.get('/', (c) => {
-  return c.text('Hello Hono!')
+  return c.json({ message: 'Hello World!'})
 })
 
-const port = 3000
+const port = parseInt(process.env.PORT!) || 3000
 console.log(`Server is running on port ${port}`)
 
 serve({

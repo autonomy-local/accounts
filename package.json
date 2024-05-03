@@ -1,7 +1,8 @@
 {
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "test": "jest --verbose --forceExit"
+    "test": "jest --verbose --forceExit",
+    "build": "tsc"
   },
   "dependencies": {
     "@hono/node-server": "^1.11.1",
@@ -16,5 +17,6 @@
   },
   "volta": {
     "node": "22.1.0"
-  }
+  },
+  "type": "module"
 }
