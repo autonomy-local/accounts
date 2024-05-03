@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "test": "jest --verbose"
+    "test": "jest --verbose --forceExit"
   },
   "dependencies": {
     "@hono/node-server": "^1.11.1",
