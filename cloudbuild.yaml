@@ -31,7 +31,6 @@ steps:
       - >-
         --tag=$BRANCH_NAME
       - '--quiet'
-      - '--no-traffic'
     id: DeployTag
     entrypoint: gcloud
 images:
