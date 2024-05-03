@@ -43,8 +43,8 @@ substitutions:
   _PLATFORM: managed
   _SERVICE_NAME: demo-backend-api
   _TRIGGER_ID: 5769c5a8-3db3-4015-a4d1-0e1d21ba0561
-  _DEPLOY_REGION: asia-northeast1
-  _AR_HOSTNAME: asia-northeast1-docker.pkg.dev
+  _DEPLOY_REGION: australia-southeast1
+  _AR_HOSTNAME: australia-southeast1-docker.pkg.dev
 tags:
   - gcp-cloud-build-deploy-cloud-run
   - gcp-cloud-build-deploy-cloud-run-managed
