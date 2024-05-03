@@ -3,7 +3,6 @@ FROM node:22-alpine AS base
 FROM base AS builder
 
 RUN apk add --no-cache libc6-compat
-WORKDIR /backend
 
 COPY package*.json ./
 COPY src ./src
@@ -13,7 +12,6 @@ RUN npm ci && \
   npm prune --production
 
 FROM base AS runner
-WORKDIR /backend
 
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 autonomy
