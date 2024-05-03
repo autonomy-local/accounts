@@ -1,4 +1,5 @@
 import { serve } from '@hono/node-server'
+import exp from 'constants'
 import { Hono } from 'hono'
 
 const app = new Hono()
@@ -14,3 +15,5 @@ serve({
   fetch: app.fetch,
   port
 })
+
+export default app
