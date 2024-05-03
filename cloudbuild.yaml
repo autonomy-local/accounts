@@ -19,8 +19,7 @@ steps:
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk:slim'
     args:
       - run
-      - services
-      - update
+      - deploy
       - $_SERVICE_NAME
       - '--platform=managed'
       - >-
