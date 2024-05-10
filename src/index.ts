@@ -1,10 +1,19 @@
 import { serve } from '@hono/node-server'
-import { Hono } from 'hono'
+import { OpenAPIHono } from '@hono/zod-openapi'
+import { route } from './router'
 
-const app = new Hono()
+const app = new OpenAPIHono()
 
-app.get('/', (c) => {
-  return c.json({ message: 'Hello World!'})
+app.openapi(route, (c) => {
+  return c.json({ message: 'Hello World!' })
+})
+
+app.doc('/doc', {
+  openapi: '3.0.0',
+  info: {
+    title: 'My API',
+    version: '1.0.0'
+  },
 })
 
 const port = parseInt(process.env.PORT!) || 3000
